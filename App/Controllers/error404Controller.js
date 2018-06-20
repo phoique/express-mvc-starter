@@ -1,5 +1,5 @@
 'use strict';
-var createError = require('http-errors');
+const createError = require('http-errors');
 
 exports.error404 = (err, req, res, next) => {
     // set locals, only providing error in development

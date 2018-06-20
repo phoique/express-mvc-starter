@@ -1,13 +1,13 @@
-var express = require('express');
-var homeRouter = express.Router();
-var indexController = require('../App/Controllers/indexController');
-var error404Controller = require('../App/Controllers/error404Controller');
-var app = express();
+const express = require('express');
+const Router = express.Router();
+const indexController = require('../App/Controllers/indexController');
+const error404Controller = require('../App/Controllers/error404Controller');
+const app = express();
 
-homeRouter.get('/', indexController.home);
+Router.get('/', indexController.home);
 
-app.use('/', homeRouter);
+app.use('/', Router);
 app.use(error404Controller.error404);
 app.use(error404Controller.view404);
 
-module.exports = homeRouter;
+module.exports = Router;
