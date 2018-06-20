@@ -1,9 +1,13 @@
 var express = require('express');
-var router = express.Router();
+var homeRouter = express.Router();
+var indexController = require('../App/Controllers/indexController');
+var error404Controller = require('../App/Controllers/error404Controller');
+var app = express();
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
-});
+homeRouter.get('/', indexController.home);
 
-module.exports = router;
+app.use('/', homeRouter);
+app.use(error404Controller.error404);
+app.use(error404Controller.view404);
+
+module.exports = homeRouter;
