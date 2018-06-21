@@ -1,9 +1,11 @@
-#Node.js Express MVC Starter <br>
-Windows Cmd or linux Terminal <br>
+# Node.js Express MVC Starter
+## Getting Started
+### Installing
+Windows cmd or linux terminal
 `git clone https://github.com/Phoique/express-mvc-starter .`
-Package install <br>
-`npm install` <br>
- Start project (Do not forget to run MongoDB) <br>
+### Package install
+`npm install`
+### Start project (Do not forget to run MongoDB)
 `npm run start:dev` <br>
-Type localhost in the web browser url section<br>
-`http://localhost:3000` <br>
+### Type localhost in the web browser url section
+`http://localhost:3000`
