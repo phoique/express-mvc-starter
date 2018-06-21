@@ -2,10 +2,18 @@
 ## Getting Started
 ### Installing
 Windows cmd or linux terminal
-```git clone https://github.com/Phoique/express-mvc-starter .```
+```
+git clone https://github.com/Phoique/express-mvc-starter .
+```
 ### Package install
-`npm install`
+`
+npm install
+`
 ### Start project (Do not forget to run MongoDB)
-`npm run start:dev` <br>
+```
+npm run start:dev
+```
 ### Type localhost in the web browser url section
-`http://localhost:3000`
+```
+http://localhost:3000
+```
