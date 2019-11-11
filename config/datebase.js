@@ -7,7 +7,7 @@ module.exports = () => {
     const datebase = 'testdb';
 
     // mongoose connect
-    mongoose.connect(`mongodb://${dbUrl}:${dbPort}/${datebase}`);
+    mongoose.connect(`mongodb://${dbUrl}:${dbPort}/${datebase}`, { useNewUrlParser: true, useUnifiedTopology: true });
     // if mongoose runs
     mongoose.connection.on('open', () => {
         //console.log('Mongodb Connected');
