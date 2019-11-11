@@ -1,7 +1,6 @@
-'use strict';
-const createError = require('http-errors');
+import createError from 'http-errors';
 
-exports.error404 = (err, req, res, next) => {
+const error404 = (err, req, res, next) => {
     // set locals, only providing error in development
     res.locals.message = err.message;
     res.locals.error = req.app.get('env') === 'development' ? err : {};
@@ -10,6 +9,8 @@ exports.error404 = (err, req, res, next) => {
     res.render('error');
 };
 
-exports.view404 = (req, res, next) => {
+const view404 = (req, res, next) => {
     next(createError(404));
 };
+
+export { error404, view404 };
