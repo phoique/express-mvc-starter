@@ -1,6 +1,6 @@
-const mongoose = require('mongoose');
+import mongoose from 'mongoose';
 
-module.exports = () => {
+const datebase = () => {
     //db info
     const dbUrl = 'localhost';
     const dbPort = '27017';
@@ -10,7 +10,7 @@ module.exports = () => {
     mongoose.connect(`mongodb://${dbUrl}:${dbPort}/${datebase}`, { useNewUrlParser: true, useUnifiedTopology: true });
     // if mongoose runs
     mongoose.connection.on('open', () => {
-        //console.log('Mongodb Connected');
+        console.log('Mongodb Connected');
     });
     // if mongoose doesn't runs
     mongoose.connection.on('error', (error) => {
@@ -19,3 +19,5 @@ module.exports = () => {
 
     mongoose.Promise = global.Promise;
 }
+
+export default datebase;

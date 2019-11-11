@@ -7,7 +7,7 @@ import logger from'morgan';
 import datebase from '../config/datebase';
 
 // Router import
-const routers = require('./routes');
+import routers from'./routes';
 
 const app = express();
 datebase();
