@@ -4,9 +4,9 @@
  * Module dependencies.
  */
 
-const app = require('../start/app');
+import app from '../start/app' ;
 const debug = require('debug')('express-mvc-starter:server');
-const http = require('http');
+import http from 'http';
 
 /**
  * Get port from environment and store in Express.

@@ -1,15 +1,16 @@
-const express = require('express');
-const path = require('path');
-const cookieParser = require('cookie-parser');
-const logger = require('morgan');
+import express from 'express';
+import path from 'path';
+import cookieParser from 'cookie-parser';
+import logger from'morgan';
 
 // Datebase
-const datebase = require('../config/datebase')();
+import datebase from '../config/datebase';
 
 // Router import
 const routers = require('./routes');
 
 const app = express();
+datebase();
 
 // view engine
 app.set('views', path.join(__dirname, '../views'));
@@ -27,4 +28,4 @@ app.use(express.static(path.join(__dirname, 'public')));
 //Routers
 app.use(routers);
 
-module.exports = app;
+export default app;
