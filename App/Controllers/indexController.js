@@ -1,5 +1,3 @@
-'use strict';
-
 // Test model
 import Test from '../Models/testSchema';
 
