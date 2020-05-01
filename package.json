@@ -9,19 +9,19 @@
     "start:dev": "nodemon --exec babel-node ./bin/www"
   },
   "dependencies": {
-    "cookie-parser": "~1.4.4",
-    "debug": "~4.1.1",
-    "express": "~4.17.1",
-    "http-errors": "~1.7.3",
-    "jade": "~1.11.0",
-    "mongoose": "^5.7.10",
-    "morgan": "~1.9.1"
+    "cookie-parser": "1.4.4",
+    "debug": "4.1.1",
+    "express": "4.17.1",
+    "http-errors": "1.7.3",
+    "jade": "1.11.0",
+    "mongoose": "5.7.10",
+    "morgan": "1.9.1"
   },
   "devDependencies": {
-    "@babel/cli": "^7.7.0",
-    "@babel/core": "^7.7.2",
-    "@babel/node": "^7.7.0",
-    "@babel/preset-env": "^7.7.1",
-    "nodemon": "^1.19.4"
+    "@babel/cli": "7.7.0",
+    "@babel/core": "7.7.2",
+    "@babel/node": "7.7.0",
+    "@babel/preset-env": "7.7.1",
+    "nodemon": "1.19.4"
   }
 }
